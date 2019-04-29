@@ -1,0 +1,52 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+  }
+
+
+body {
+    font-family:'Berkshire Swash', cursive;
+    background-color: teal;
+    height: 200vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1, h2 {
+text-align: center;
+}
+
+section {
+    display: grid;
+    grid-template-columns: repeat(3, 20vmin);
+    grid-template-rows: repeat(3, 20vmin);
+    border: 5px solid black;
+    cursor: pointer;
+    text-align: center;
+}
+
+section div {
+border: 5px solid black;
+text-align: center;
+vertical-align: middle;
+}
+
+#boxToClick {
+    display: grid;
+}
+
+.finished {
+    display: none;
+    background-color: (0, 139, 139, 0.5);
+    width: 220px;
+    height: 120px;
+    position: absolute;
+    font-size: 3em;
+    text-align: center;
+    left: 50%;
+    margin-left: -100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
